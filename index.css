@@ -1,0 +1,135 @@
+/*--------------- Default Styles (Mobile-first Approach)  --------------- */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+/* Typography */
+@font-face {
+    font-family: "Figtree";
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+/* spacing */
+.lg-btm-space {
+    margin-bottom: 24px;
+}
+.sm-btm-space {
+    margin-bottom: 12px;
+}
+
+body {
+    font-family: "Figtree";
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+article {
+    padding: 24px;
+    width: 327px;
+    background-color: var(--white);
+    border: var(--black) 1px solid;
+    border-radius: 20px;
+    box-shadow: var(--black) 10px 10px;
+}
+
+article:hover {
+    box-shadow: var(--black) 15px 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tag {
+    width: 73px;
+    font-weight: 800;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.summary {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    width: 32px;
+}
+
+.author-container p {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--black);
+}
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--white);
+}
+
+/*--------------- Desktop Styles --------------- */
+@media screen and (min-width: 1440px) {
+    article {
+        width: 384px;
+    }
+    .tag {
+        width: 82px;
+        font-size: 14px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .summary {
+        font-size: 16px;
+    }
+    
+}
